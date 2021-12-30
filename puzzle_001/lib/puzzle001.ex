@@ -13,7 +13,7 @@ defmodule Puzzle001 do
   def load_puzzle(filename) do
     case File.read(filename) do
       {:ok, binary} -> binary
-      {:error, _reason} -> IO.puts("That file doesn't exist welp 🥲")
+      {:error, _reason} -> "That file doesn't exist welp 🥲"
     end
   end
 
